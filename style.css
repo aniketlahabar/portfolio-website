@@ -1,0 +1,272 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Style the body */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f3f4f6;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Header styling */
+header {
+    position: sticky;
+    top: 0;
+    background-color: #111;
+    color: #fff;
+    padding: 20px 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+/* Navigation styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff; /* Default link color in light mode */
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #61dafb; /* Hover effect in light mode */
+}
+
+/* About section */
+section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background: #eae7e7;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333; /* Default heading color in light mode */
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #61dafb;
+}
+
+#about p {
+    font-size: 18px;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Skills section */
+#skills p {
+    font-size: 18px;
+    text-align: left;
+    max-width: 800px;
+    margin: auto;
+}
+/* Skills section */
+#skills {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: left;
+}
+
+.skill {
+    margin: 10px 0;
+}
+
+.skill p {
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+
+.skill-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 10px;
+    margin-bottom: 10px;
+}
+
+.skill-level {
+    height: 100%;
+    background-color: #61dafb;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 10px;
+    color: white;
+    border-radius: 20px;
+    transition: width 0.3s ease;
+}
+
+/* Dark mode skill bar colors */
+body.dark-mode .skill-bar {
+    background-color: #3a3b4e;
+}
+
+body.dark-mode .skill-level {
+    background-color: #9ed7fa; /* Lighter blue for dark mode */
+}
+
+
+/* Project cards styling */
+.project {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 8px;
+    background-color: #fdfdfd;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #111; /* Default project title color in light mode */
+}
+
+.project p {
+    font-size: 16px;
+    color: #555; /* Default project description color in light mode */
+}
+
+/* Dark mode toggle */
+#dark-mode-toggle {
+    cursor: pointer;
+    background: none;
+    border: 2px solid #61dafb;
+    padding: 10px;
+    border-radius: 50%;
+    color: #f5e8e8;
+    transition: background-color 0.3s ease;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #eef1f1;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #111;
+    color: #f7f4f4;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* Dark Mode Styling */
+body.dark-mode {
+    background-color: #1a1a2e;
+    color: #f4f4f9; /* Default text color in dark mode */
+}
+
+body.dark-mode header {
+    background-color: #222;
+}
+
+body.dark-mode section {
+    background-color: #27293d;
+}
+
+/* Ensure section headings are visible in dark mode */
+body.dark-mode section h2 {
+    color: #61dafb; /* Light blue for section headings in dark mode */
+}
+
+/* Ensure link colors are visible in dark mode */
+body.dark-mode nav ul li a {
+    color: #61dafb; /* Light blue links in dark mode */
+}
+
+body.dark-mode nav ul li a:hover {
+    color: #fff; /* White on hover in dark mode */
+}
+
+/* Ensure paragraphs inside sections are visible in dark mode */
+body.dark-mode section p {
+    color: #dfedee; /* Light color for paragraph text in dark mode */
+}
+
+/* Dark mode for project titles */
+body.dark-mode .project h3 {
+    color: #61dafb; /* Light blue for project titles in dark mode */
+}
+
+body.dark-mode .project p {
+    color: #020a0b; /* Light color for project descriptions in dark mode */
+}
+
+/* Style the profile image */
+.profile-img {
+    width: 100px; /* Increase size of the circle */
+    height: 100px; /* Same as width for a perfect circle */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover;
+    object-position: center top; /* Adjust which part of the image is visible */
+    margin-left: 20px; /* Adjust spacing */
+    border: 2px solid #fff; /* Optional border */
+    transition: transform 0.3s ease;
+}
+
+/* Optional hover effect to enlarge the image slightly */
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+/* Adjust h1 to align with the image */
+header h1 {
+    font-size: 24px;
+    margin-left: 10px; /* Adjust space between image and text */
+    display: inline-block;
+    vertical-align: middle; /* Align with the image */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}

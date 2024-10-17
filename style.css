@@ -270,3 +270,16 @@ nav {
     max-width: 1200px;
     margin: auto;
 }
+
+.resume-btn {
+    background-color: #61dafb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.resume-btn:hover {
+    background-color: #21a121;
+}
